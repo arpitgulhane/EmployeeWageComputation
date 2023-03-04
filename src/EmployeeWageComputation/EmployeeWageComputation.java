@@ -13,6 +13,8 @@ public class EmployeeWageComputation {
         int PartTimeHrs =4;
 
         int dailyWage=0;
+        int month = 20;
+        int monthWage = 20;
 
         switch (empCheck){
             case 0:
@@ -21,12 +23,16 @@ public class EmployeeWageComputation {
             case 1:
                 System.out.println("Employee is Present");
                 dailyWage = WagePerHrs*FullDayHrs;
+                monthWage = dailyWage * month;
                 System.out.println("Employee Daily Wage is :"+dailyWage);
+                System.out.println("Employee Month Wage is :"+monthWage);
                  break;
             case 2:
                 System.out.println("Employee is Present but part time");
                 dailyWage = WagePerHrs*PartTimeHrs;
+                monthWage = dailyWage * month;
                 System.out.println("Employee Daily Wage is :"+dailyWage);
+                System.out.println("Employee Month Wage is :"+monthWage);
                 break;
         }
 
